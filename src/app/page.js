@@ -4,7 +4,7 @@ import Social from '@/data/social';
 
 export default function Home() {
 	return (
-		<div className="flex flex-col w-screen h-screen items-center justify-start gap-10 p-[50px] text-[#E9E9E9]">
+		<div className="flex flex-col w-screen h-screen items-center justify-start gap-10 p-[50px] text-[#E9E9E9] md:w-[1000px]">
 			<div className="flex flex-col items-center justify-center gap-5 mt-[10%]">
 				<Image
 					className="rounded-full border border-white"

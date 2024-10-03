@@ -16,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en" className={poppins.className}>
-			<body>
+			<body className="flex items-center justify-center">
 				{children}
 				<Analytics />
 			</body>
