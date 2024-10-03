@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Playlist from '@/data/playlist';
+import Social from '@/data/social';
 
 export default function Home() {
 	return (
@@ -13,6 +14,13 @@ export default function Home() {
 					height={100}
 				/>
 				<h1 className="text-4xl font-bold">xNoisy</h1>
+				<div className="flex flex-row gap-2 w-full h-fit justify-center">
+					{Social.map((link) => (
+						<a key={link.title} className=" overflow-hidden" href={link.url} target="blank">
+							<div className="size-[20px]">{link.icon}</div>
+						</a>
+					))}
+				</div>
 			</div>
 			<div className="flex flex-col w-full gap-4 items-center">
 				<h2 className="text-2xl">Playlist ⇣</h2>
