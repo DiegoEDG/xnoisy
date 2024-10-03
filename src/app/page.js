@@ -15,11 +15,11 @@ export default function Home() {
 				<h1 className="text-4xl font-bold">xNoisy</h1>
 			</div>
 			<div className="flex flex-col w-full gap-4 items-center">
-				<h2 className="text-2xl font-bold">Playlist ⇣</h2>
+				<h2 className="text-2xl">Playlist ⇣</h2>
 				{Playlist.map((link) => (
 					<a
 						key={link.title}
-						className="font-semibold flex border border-white rounded-lg w-full h-[50px] items-center justify-center"
+						className="font-semibold flex border border-2 border-white rounded-lg w-full h-[50px] items-center justify-center bg-[#ffffff14]"
 						href={link.url}
 						target="blank"
 					>
