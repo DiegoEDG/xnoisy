@@ -1,5 +1,5 @@
-const { default: Instagram } = require('@/svg/instagram');
-const { default: Spotify } = require('@/svg/spotify');
+import Instagram from '@/svg/Instagram';
+import Spotify from '@/svg/Spotify';
 
 const Social = [
 	{
