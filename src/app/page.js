@@ -4,8 +4,8 @@ import Social from '@/data/social';
 
 export default function Home() {
 	return (
-		<div className="flex flex-col w-screen h-screen items-center justify-start gap-10 p-[50px] bg-[#1E293B] text-[#E9E9E9]">
-			<div className="flex flex-col items-center justify-center gap-5 mt-20">
+		<div className="flex flex-col w-screen h-screen items-center justify-start gap-10 p-[50px] text-[#E9E9E9]">
+			<div className="flex flex-col items-center justify-center gap-5 mt-[10%]">
 				<Image
 					className="rounded-full border border-white"
 					src={'/assets/logo.jpg'}
@@ -17,7 +17,7 @@ export default function Home() {
 				<div className="flex flex-row gap-2 w-full h-fit justify-center">
 					{Social.map((link) => (
 						<a key={link.title} className=" overflow-hidden" href={link.url} target="blank">
-							<div className="size-[20px]">{link.icon}</div>
+							<div className="size-[40px]">{link.icon}</div>
 						</a>
 					))}
 				</div>
@@ -27,11 +27,11 @@ export default function Home() {
 				{Playlist.map((link) => (
 					<a
 						key={link.title}
-						className="font-semibold flex border border-2 border-white rounded-lg w-full h-[50px] items-center justify-center bg-[#ffffff14]"
+						className="font-medium flex border border-2 border-white rounded-2xl w-full h-fit p-3 items-center justify-center bg-[#ffffff14] text-xl"
 						href={link.url}
 						target="blank"
 					>
-						{' '}
+						<Image src={link.img} width={40} height={40} className="mr-3 rounded-lg" />
 						{link.title}
 					</a>
 				))}
