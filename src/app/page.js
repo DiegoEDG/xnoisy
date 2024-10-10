@@ -11,7 +11,7 @@ export default function Home() {
 				<div className="pink-gradient"></div>
 			</div>
 			<div className="flex flex-col w-screen h-screen items-center justify-start gap-10 p-[50px] text-[#E9E9E9] md:w-[1000px] overflow-hidden ">
-				<div className="flex flex-col items-center justify-center gap-5 mt-[10%]">
+				<div className="flex flex-col items-center justify-center gap-5">
 					<Image src={'/assets/logo.png'} alt="Noisy Logo" width={80} height={80} />
 					<h1 className="text-4xl font-bold">xNoisy</h1>
 					<Social />

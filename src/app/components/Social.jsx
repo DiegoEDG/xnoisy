@@ -5,7 +5,7 @@ const Social = () => {
 		<div className="flex flex-row gap-2 w-full h-fit justify-center">
 			{SocialData.map((social) => (
 				<a key={social.title} className=" overflow-hidden" href={social.url} target="blank">
-					<div className=" border border-[1px] rounded-full p-2">{social.icon}</div>
+					<div className=" border border-[1px] border-[#b1b1b1] rounded-full p-2">{social.icon}</div>
 				</a>
 			))}
 		</div>
