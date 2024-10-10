@@ -17,6 +17,7 @@
 body {
 	color: var(--foreground);
 	background: var(--background);
+	overflow: hidden;
 }
 
 @layer utilities {
@@ -26,20 +27,43 @@ body {
 }
 
 body {
-	background: linear-gradient(-45deg, #ee7752, #ac2056, #0b6788, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-	height: 100vh;
+	background: #0f1221;
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+.blue-gradient {
+	position: absolute;
+	margin-top: -150px;
+	margin-left: -200px;
+	opacity: 1;
+	filter: blur(189.12px);
+	border-radius: 50vw;
+	width: 70vw;
+	height: 70vw;
+	background: rgb(38, 197, 241);
+	background: radial-gradient(circle, rgb(72, 215, 255) 35%, rgb(7, 119, 130) 100%);
+}
+.orange-gradient {
+	position: absolute;
+	margin-top: 400px;
+	margin-left: 400px;
+	opacity: 1;
+	filter: blur(189.12px);
+	border-radius: 50vw;
+	width: 70vw;
+	height: 70vw;
+	background: rgb(255, 201, 115);
+	background: radial-gradient(circle, rgb(255, 201, 115) 35%, rgb(255, 176, 49) 100%);
+}
+
+.pink-gradient {
+	position: absolute;
+	margin-top: 900px;
+	margin-left: -500px;
+	opacity: 1;
+	filter: blur(189.12px);
+	border-radius: 50vw;
+	width: 70vw;
+	height: 70vw;
+	background: rgb(255, 112, 250);
+	background: radial-gradient(circle, rgb(255, 112, 250) 35%, rgb(255, 34, 248) 100%);
 }
